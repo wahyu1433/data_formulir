@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GejalaKlinis">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GEJALA KLINIS"
+                android:textSize="25sp"
+                android:fontFamily="@font/sansbold"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sansaregular"
+                android:lineSpacingExtra="3dp"
+                android:text="Apakah anda saat ini sedang demam atau memiliki
+        riwayat demam dalam beberapa minggu terakhir (>= 38 Celcius)?"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"/>/>
+            <RadioGroup
+                android:id="@+id/radio_grup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:fontFamily="@font/sansaregular"
+                    android:id="@+id/ya1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ya"
+                    android:layout_marginRight="80dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"/>/>
+                <RadioButton
+                    android:id="@+id/tidak1"
+                    android:fontFamily="@font/sansaregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"/>
+            </RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sansaregular"
+                android:text="Apakah anda mengalami batuk ?"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"/>/>
+            <RadioGroup
+                android:id="@+id/radio_grup2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/ya2"
+                    android:fontFamily="@font/sansaregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ya"
+                    android:layout_marginRight="80dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"/>/>
+                <RadioButton
+                    android:id="@+id/tidak2"
+                    android:fontFamily="@font/sansaregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"/>/>
+            </RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sansaregular"
+                android:text="Apakah anda mengalami pilek ?"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"/>
+            <RadioGroup
+                android:id="@+id/radio_grup3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/ya3"
+                    android:fontFamily="@font/sansaregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ya"
+                    android:layout_marginRight="80dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"/>/>
+                <RadioButton
+                    android:id="@+id/tidak3"
+                    android:fontFamily="@font/sansaregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"/>/>
+            </RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sansaregular"
+                android:lineSpacingExtra="3dp"
+                android:text="Apakah anda merasa nyeri tenggorokan atau nyeri menelan ?"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"/>
+            <RadioGroup
+                android:id="@+id/radio_grup4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/ya4"
+                    android:fontFamily="@font/sansaregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ya"
+                    android:layout_marginRight="80dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"/>
+                <RadioButton
+                    android:id="@+id/tidak4"
+                    android:fontFamily="@font/sansaregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"/>
+            </RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sansaregular"
+                android:text="Apakah anda mengalami sesak nafas ?"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"/>
+            <RadioGroup
+                android:id="@+id/radio_grup5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/ya5"
+                    android:fontFamily="@font/sansaregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ya"
+                    android:layout_marginRight="80dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"/>
+                <RadioButton
+                    android:id="@+id/tidak5"
+                    android:fontFamily="@font/sansaregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"/>
+            </RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/graphiksemibold"
+                android:lineSpacingExtra="10dp"
+                android:text="FAKTOR RISIKO / RIWAYAT KONTAK"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"/>/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sansaregular"
+                android:lineSpacingExtra="3dp"
+                android:text="Apakah anda mengalami riwayat perjalanan atau tinggal
+        di luar negeri yang melaporkan transmisi lokal 14 hari terakhir ?"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"/>
+            <RadioGroup
+                android:id="@+id/radio_grup6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/ya6"
+                    android:fontFamily="@font/sansaregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ya"
+                    android:layout_marginRight="80dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"/>
+                <RadioButton
+                    android:id="@+id/tidak6"
+                    android:fontFamily="@font/sansaregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"/>
+            </RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sansaregular"
+                android:lineSpacingExtra="3dp"
+                android:layout_marginRight="5dp"
+                android:text="Apakah anda memiliki riwayat perjalanan atau tinggal di area
+transmisi lokal di Indonesia 14 hari terakhir ?"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"/>
+            <RadioGroup
+                android:id="@+id/radio_grup7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/ya7"
+                    android:fontFamily="@font/sansaregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ya"
+                    android:layout_marginRight="80dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"/>
+                <RadioButton
+                    android:id="@+id/tidak7"
+                    android:fontFamily="@font/sansaregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"/>
+
+            </RadioGroup>
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_marginBottom="20dp">-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="35dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/back2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/stat_button"
+                    android:fontFamily="@font/graphiksemibold"
+                    android:text="kembali"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/next2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/stat_button"
+                    android:fontFamily="@font/graphiksemibold"
+                    android:text="lanjut"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>
