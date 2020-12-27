@@ -14,17 +14,17 @@ import kotlinx.android.synthetic.main.activity_home.*
 
 class HomeActivity : AppCompatActivity() {
 
-    var keluar: ImageView? = null
+    var menu: ImageView? = null
     var stat: Button? = null
     var form: Button? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        keluar = findViewById(R.id.imageView)
+        menu = findViewById(R.id.imageView)
         //Keluar
-        keluar?.setOnClickListener{
-            val popup = PopupMenu(this@HomeActivity, keluar)
+        menu?.setOnClickListener{
+            val popup = PopupMenu(this@HomeActivity, menu)
             //Inflating the Popup using xml file
             popup.menuInflater.inflate(R.menu.menu_logout, popup.menu)
 
@@ -42,14 +42,37 @@ class HomeActivity : AppCompatActivity() {
                                 }
                             })
                 } else {
-                    Toast.makeText(applicationContext, "None", Toast.LENGTH_SHORT).show()
+//                    Toast.makeText(applicationContext, "None", Toast.LENGTH_SHORT).show()
+//                    startActivity(Intent(this@HomeActivity, MyListData::class.java))
+                    val i = Intent(applicationContext, MyListData::class.java)
+                    startActivity(i)
                 }
                 true
             })
 
             popup.show()//showing popup menu
 
+
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         stat = findViewById(R.id.stat)

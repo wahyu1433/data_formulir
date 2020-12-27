@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".FormulirDataActivity">
+    tools:context=".UpdateData">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -30,7 +29,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/nama_lengkap"
+                android:id="@+id/new_nama"
                 style="@style/styleEditText"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
@@ -52,20 +51,20 @@
                 android:textStyle="bold" />
 
             <RadioGroup
-                android:id="@+id/jkelgroup"
+                android:id="@+id/new_jkelgroup"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp">
 
                 <RadioButton
-                    android:id="@+id/radioperempuan"
+                    android:id="@+id/new_radioperempuan"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Perempuan" />
 
                 <RadioButton
-                    android:id="@+id/radiolakilaki"
+                    android:id="@+id/new_radiolakilaki"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Laki-Laki" />
@@ -85,7 +84,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/ttl"
+                android:id="@+id/new_ttl"
                 style="@style/styleEditText"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
@@ -106,7 +105,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/nomorhp"
+                android:id="@+id/new_nomorhp"
                 style="@style/styleEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -130,7 +129,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/alamat"
+                android:id="@+id/new_alamat"
                 style="@style/styleEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -154,7 +153,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/email"
+                android:id="@+id/new_email"
                 style="@style/styleEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -164,41 +163,6 @@
                 android:hint="Masukkan Email"
                 android:inputType="text"
                 android:paddingLeft="20dp" />
-
-            <!--    <LinearLayout-->
-            <!--        android:layout_width="match_parent"-->
-            <!--        android:layout_height="wrap_content"-->
-            <!--        android:orientation="horizontal"-->
-            <!--        android:layout_marginTop="20dp"-->
-            <!--        android:layout_marginBottom="15dp">-->
-            <!--<LinearLayout-->
-            <!--    android:layout_width="match_parent"-->
-            <!--    android:layout_height="wrap_content"-->
-            <!--    android:layout_marginTop="40dp"-->
-            <!--    android:gravity="center"-->
-            <!--    android:layout_marginBottom="35dp">-->
-
-
-            <!--    <Button-->
-            <!--        android:layout_width="wrap_content"-->
-            <!--        android:layout_height="wrap_content"-->
-            <!--        android:id="@+id/back"-->
-            <!--        android:text="kembali"-->
-            <!--        android:background="@drawable/stat_button"-->
-            <!--        android:fontFamily="@font/graphiksemibold"-->
-            <!--        android:textColor="#FFFFFF"-->
-            <!--        android:textSize="16sp"/>-->
-            <!--    <Button-->
-            <!--        android:text="lanjut"-->
-            <!--        android:layout_width="wrap_content"-->
-            <!--        android:layout_height="wrap_content"-->
-            <!--        android:id="@+id/next"-->
-            <!--        android:background="@drawable/stat_button"-->
-            <!--        android:layout_marginLeft="20dp"-->
-            <!--        android:fontFamily="@font/graphiksemibold"-->
-            <!--        android:textColor="#FFFFFF"-->
-            <!--        android:textSize="16sp"/>-->
-            <!--            </LinearLayout>-->
 
             <TextView
                 android:layout_width="match_parent"
@@ -225,13 +189,13 @@
                 android:textStyle="normal" />/>
 
             <RadioGroup
-                android:id="@+id/radio_grup1"
+                android:id="@+id/new_radio_grup1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <RadioButton
-                    android:id="@+id/ya1"
+                    android:id="@+id/new_ya1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
@@ -241,7 +205,7 @@
                     android:text="Ya" />/>
 
                 <RadioButton
-                    android:id="@+id/tidak1"
+                    android:id="@+id/new_tidak1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
@@ -263,13 +227,13 @@
                 android:textStyle="normal" />/>
 
             <RadioGroup
-                android:id="@+id/radio_grup2"
+                android:id="@+id/new_radio_grup2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <RadioButton
-                    android:id="@+id/ya2"
+                    android:id="@+id/new_ya2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
@@ -280,7 +244,7 @@
                     android:text="Ya" />/>
 
                 <RadioButton
-                    android:id="@+id/tidak2"
+                    android:id="@+id/new_tidak2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
@@ -302,13 +266,13 @@
                 android:textStyle="normal" />
 
             <RadioGroup
-                android:id="@+id/radio_grup3"
+                android:id="@+id/new_radio_grup3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <RadioButton
-                    android:id="@+id/ya3"
+                    android:id="@+id/new_ya3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
@@ -319,7 +283,7 @@
                     android:text="Ya" />/>
 
                 <RadioButton
-                    android:id="@+id/tidak3"
+                    android:id="@+id/new_tidak3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
@@ -342,13 +306,13 @@
                 android:textStyle="normal" />
 
             <RadioGroup
-                android:id="@+id/radio_grup4"
+                android:id="@+id/new_radio_grup4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <RadioButton
-                    android:id="@+id/ya4"
+                    android:id="@+id/new_ya4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
@@ -359,7 +323,7 @@
                     android:text="Ya" />
 
                 <RadioButton
-                    android:id="@+id/tidak4"
+                    android:id="@+id/new_tidak4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
@@ -381,13 +345,13 @@
                 android:textStyle="normal" />
 
             <RadioGroup
-                android:id="@+id/radio_grup5"
+                android:id="@+id/new_radio_grup5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <RadioButton
-                    android:id="@+id/ya5"
+                    android:id="@+id/new_ya5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
@@ -398,7 +362,7 @@
                     android:text="Ya" />
 
                 <RadioButton
-                    android:id="@+id/tidak5"
+                    android:id="@+id/new_tidak5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
@@ -434,13 +398,13 @@
                 android:textStyle="normal" />
 
             <RadioGroup
-                android:id="@+id/radio_grup6"
+                android:id="@+id/new_radio_grup6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <RadioButton
-                    android:id="@+id/ya6"
+                    android:id="@+id/new_ya6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
@@ -451,7 +415,7 @@
                     android:text="Ya" />
 
                 <RadioButton
-                    android:id="@+id/tidak6"
+                    android:id="@+id/new_tidak6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
@@ -476,13 +440,13 @@ transmisi lokal di Indonesia 14 hari terakhir ?"
                 android:textStyle="normal" />
 
             <RadioGroup
-                android:id="@+id/radio_grup7"
+                android:id="@+id/new_radio_grup7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <RadioButton
-                    android:id="@+id/ya7"
+                    android:id="@+id/new_ya7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
@@ -493,7 +457,7 @@ transmisi lokal di Indonesia 14 hari terakhir ?"
                     android:text="Ya" />
 
                 <RadioButton
-                    android:id="@+id/tidak7"
+                    android:id="@+id/new_tidak7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
@@ -516,23 +480,7 @@ transmisi lokal di Indonesia 14 hari terakhir ?"
                 android:textSize="25sp"
                 android:textStyle="bold" />
 
-<!--            <TextView-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginLeft="10dp"-->
-<!--                android:layout_marginTop="20dp"-->
-<!--                android:layout_marginRight="10dp"-->
-<!--                android:layout_marginBottom="8dp"-->
-<!--                android:fontFamily="@font/sansaregular"-->
-<!--                android:paddingLeft="20dp"-->
-<!--                android:text="Jam" />-->
 
-<!--            <Spinner-->
-<!--                android:id="@+id/jam"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginLeft="10dp"-->
-<!--                android:layout_marginRight="10dp" />-->
 
             <EditText
                 android:layout_width="match_parent"
@@ -544,9 +492,7 @@ transmisi lokal di Indonesia 14 hari terakhir ?"
                 android:fontFamily="@font/sansaregular"
                 android:paddingLeft="20dp"
                 android:hint="Klik Untuk Pilih Tanggal"
-                android:id="@+id/pilihjadwal"/>
-
-
+                android:id="@+id/new_pilihjadwal"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -556,12 +502,12 @@ transmisi lokal di Indonesia 14 hari terakhir ?"
                 android:gravity="center">
 
                 <Button
-                    android:id="@+id/simpandata"
+                    android:id="@+id/edit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/stat_button"
                     android:fontFamily="@font/graphiksemibold"
-                    android:text="Simpan"
+                    android:text="Edit"
                     android:textColor="#FFFFFF"
                     android:textSize="16sp" />
 

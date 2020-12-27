@@ -83,8 +83,8 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/next"
-            android:text="lanjut"
+            android:id="@+id/simpandata"
+            android:text="Simpan"
             android:background="@drawable/stat_button"
             android:fontFamily="@font/graphiksemibold"
             android:textColor="#FFFFFF"

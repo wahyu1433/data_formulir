@@ -78,7 +78,7 @@ class MainActivity : AppCompatActivity() {
                 if (tab.position == onBoardingData.size - 1) {
                     next!!.text = "Mulai"
                 } else {
-                    next!!.text = "Next"
+                    next!!.text = "Lanjut"
                 }
             }
 

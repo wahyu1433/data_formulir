@@ -4,5 +4,8 @@
     <item
         android:id="@+id/keluar"
         android:title="Keluar"/>
+    <item
+        android:id="@+id/lihat_data"
+        android:title="Lihat Data"/>
 
 </menu>
